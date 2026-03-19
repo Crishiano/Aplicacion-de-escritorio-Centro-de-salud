@@ -15,8 +15,8 @@ namespace CapaDatos
             //string cadenaConexion = "Data Source=localhost\\SQLEXPRESS; Initial Catalog=BD_CentroSalud; " +
             //    "Integrated Security=true; TrustServerCertificate=True";
 
-            string cadenaConexion = "Data Source=JURY\\SQLEXPRESS; Initial Catalog=BD_CentroSalud; " +
-                 "Integrated Security=true; TrustServerCertificate=True";
+            // string cadenaConexion = "Data Source=; Initial Catalog=BD_CentroSalud; " +
+             //    "Integrated Security=true; TrustServerCertificate=True";
 
 
             return new SqlConnection(cadenaConexion);
