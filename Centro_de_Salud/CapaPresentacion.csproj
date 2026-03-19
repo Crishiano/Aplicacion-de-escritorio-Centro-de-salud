@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Reportes\citasfiltro.rdlc" />
+    <None Remove="Reportes\reportecitasatendidas\CitaAtendida.rdlc" />
+    <None Remove="Reportes\reportecitaspormedico\citapormedico.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\citasfiltro.rdlc" />
+    <EmbeddedResource Include="Reportes\reportecitasatendidas\CitaAtendida.rdlc" />
+    <EmbeddedResource Include="Reportes\reportecitaspormedico\citapormedico.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.33" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Logica\CapaLogica.csproj" />
+    <ProjectReference Include="..\Capa Modelo\CapaModelo.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Reportes\citafiltro_ds.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>citafiltro_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reportes\reportecitasatendidas\citaestado.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>citaestado.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Reportes\reportecitaspormedico\citapormedico_ds.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>citapormedico_ds.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reportes\citafiltro_ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>citafiltro_ds.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reportes\reportecitasatendidas\citaestado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>citaestado.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reportes\reportecitaspormedico\citapormedico_ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>citapormedico_ds.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

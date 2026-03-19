@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="citapormedico" targetNamespace="http://tempuri.org/citapormedico.xsd" xmlns:mstns="http://tempuri.org/citapormedico.xsd" xmlns="http://tempuri.org/citapormedico.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="citapormedico" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="citapormedico" msprop:Generator_DataSetName="citapormedico">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="cita" msprop:Generator_RowEvHandlerName="citaRowChangeEventHandler" msprop:Generator_RowDeletedName="citaRowDeleted" msprop:Generator_RowDeletingName="citaRowDeleting" msprop:Generator_RowEvArgName="citaRowChangeEvent" msprop:Generator_TablePropName="cita" msprop:Generator_RowChangedName="citaRowChanged" msprop:Generator_RowChangingName="citaRowChanging" msprop:Generator_TableClassName="citaDataTable" msprop:Generator_RowClassName="citaRow" msprop:Generator_TableVarName="tablecita" msprop:Generator_UserTableName="cita">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idCita" msprop:Generator_ColumnPropNameInRow="idCita" msprop:Generator_ColumnPropNameInTable="idCitaColumn" msprop:Generator_ColumnVarNameInTable="columnidCita" msprop:Generator_UserColumnName="idCita" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_UserColumnName="Fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="hora" msprop:Generator_ColumnPropNameInRow="hora" msprop:Generator_ColumnPropNameInTable="horaColumn" msprop:Generator_ColumnVarNameInTable="columnhora" msprop:Generator_UserColumnName="hora" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_UserColumnName="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="motivo" msprop:Generator_ColumnPropNameInRow="motivo" msprop:Generator_ColumnPropNameInTable="motivoColumn" msprop:Generator_ColumnVarNameInTable="columnmotivo" msprop:Generator_UserColumnName="motivo" type="xs:string" minOccurs="0" />
+              <xs:element name="Paciente" msprop:Generator_ColumnPropNameInRow="Paciente" msprop:Generator_ColumnPropNameInTable="PacienteColumn" msprop:Generator_ColumnVarNameInTable="columnPaciente" msprop:Generator_UserColumnName="Paciente" type="xs:string" minOccurs="0" />
+              <xs:element name="Medico" msprop:Generator_ColumnPropNameInRow="Medico" msprop:Generator_ColumnPropNameInTable="MedicoColumn" msprop:Generator_ColumnVarNameInTable="columnMedico" msprop:Generator_UserColumnName="Medico" type="xs:string" minOccurs="0" />
+              <xs:element name="Especialidad" msprop:Generator_ColumnPropNameInRow="Especialidad" msprop:Generator_ColumnPropNameInTable="EspecialidadColumn" msprop:Generator_ColumnVarNameInTable="columnEspecialidad" msprop:Generator_UserColumnName="Especialidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
